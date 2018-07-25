@@ -66,5 +66,13 @@ sends
 - _base_frame_name_ -> _camera_frame_name_
 - _robot_ee_frame_name_ -> _target_frame_name_
 
+##### APRILTAGS
+
+- launch the detection of the calibration tag (in the example is with kinect2 image topics)
+- run the apriltag calibration node
+- place the tag on a fixed position in the robot end effector and move it in the image
+- collect at least 20 poses with the /read_tfs server call
+- compute the calibration pose. It is saved into a file (sensor_name.txt)
+
 
 
